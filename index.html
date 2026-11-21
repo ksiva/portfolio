@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Siva Kumar · Video & 3D Portfolio</title>
+<meta name="description" content="Short-form video editing, motion graphics and 3D renders: spec samples by Siva Kumar.">
+<meta name="robots" content="noindex">
+<style>
+  :root{
+    --bg:#0e0f11; --panel:#16181b; --line:#25282d; --text:#ecebe7; --muted:#9b9a95; --accent:#e8b04a;
+    --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--text);
+    font:16px/1.55 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+  a{color:var(--text)}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  header{padding:72px 0 40px;border-bottom:1px solid var(--line)}
+  .kicker{color:var(--accent);font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin:0 0 14px}
+  h1{font-size:clamp(34px,5.4vw,58px);line-height:1.05;margin:0 0 16px;letter-spacing:-.02em;font-weight:700}
+  .lede{max-width:640px;color:var(--muted);font-size:18px;margin:0 0 24px}
+  .links{display:flex;flex-wrap:wrap;gap:10px}
+  .links a{text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:14px}
+  .links a:hover{border-color:var(--accent)}
+  section{padding:48px 0}
+  h2{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 22px;font-weight:600}
+  .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+    display:flex;flex-direction:column}
+  .wide{grid-column:span 12}
+  .half{grid-column:span 6}
+  .media{background:#000;display:flex;justify-content:center;align-items:center}
+  .media video,.media img{width:100%;height:auto;display:block}
+  .pair{display:grid;grid-template-columns:3fr 1fr;gap:2px;background:#000}
+  .pair video{width:100%;height:100%;max-height:72vh;object-fit:contain;background:#000}
+  .tall video{max-height:640px;width:auto;max-width:100%}
+  .body{padding:18px 20px 22px}
+  .body h3{margin:0 0 6px;font-size:19px;line-height:1.3}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+  .tags span{font-size:12px;color:var(--accent);border:1px solid #3a3222;border-radius:6px;padding:2px 8px}
+  .body p{margin:0 0 8px;color:var(--muted);font-size:15px}
+  .body p.src{font-size:13px;margin-top:10px;color:#77766f}
+  footer{border-top:1px solid var(--line);padding:28px 0 48px;color:#77766f;font-size:13px}
+  @media (max-width:820px){
+    .half{grid-column:span 12}
+    .pair{grid-template-columns:1fr}
+    header{padding:48px 0 32px}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <p class="kicker">Video · Motion · 3D</p>
+    <h1>Siva Kumar</h1>
+    <p class="lede">Short-form video editing, motion graphics and 3D renders. Every piece here is a spec sample I built against a real client brief, delivered at 60 fps in the sizes the brief asked for.</p>
+    <div class="links">
+      <a href="https://www.upwork.com/freelancers/~0172fdaac5d9d98a5d" rel="noopener">Upwork profile</a>
+      <a href="https://contra.com/s_k_db1p7xtq" rel="noopener">Contra profile</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>Video &amp; motion</h2>
+    <div class="grid">
+
+      <article class="card wide">
+        <div class="pair">
+          <video controls playsinline preload="none" poster="media/cover-amalfi.jpg" src="media/amalfi-travel-edit.mp4"></video>
+          <video controls playsinline preload="none" poster="media/cover-teaser.jpg" src="media/amalfi-teaser-9x16.mp4"></video>
+        </div>
+        <div class="body">
+          <div class="tags"><span>Travel edit</span><span>Colour grade</span><span>16:9 + 9:16</span></div>
+          <h3>Amalfi Coast cinematic travel edit</h3>
+          <p>A 34-second film plus a 12-second vertical teaser for a travel brand brief. Shot selection and story order, motion-matched cuts, speed-ramped drone reveals, the title tucked behind the landscape, one grade across every clip, and ocean and town ambience mixed under the music.</p>
+          <p class="src">Footage: Pexels (licensed). Music and ambience: Pixabay. Master is 4K60; this web copy is compressed.</p>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="media tall">
+          <video controls playsinline preload="none" poster="media/cover-science.jpg" src="media/science-reel.mp4"></video>
+        </div>
+        <div class="body">
+          <div class="tags"><span>Reel</span><span>Motion graphics</span><span>9:16</span></div>
+          <h3>Science explainer Reel: "Where did all this foam come from?"</h3>
+          <p>A 33-second explainer for a kids-science channel. A hook in the first second, numbered steps, an animated diagram of what happens inside the bottle, bold captions, and sound design cut on the beat.</p>
+          <p class="src">Footage: Pexels (licensed). Graphics, score and effects made for this piece.</p>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="media">
+          <video controls playsinline preload="none" poster="media/cover-mast.jpg" src="media/mast-vfx.mp4"></video>
+        </div>
+        <div class="body">
+          <div class="tags"><span>VFX</span><span>Blender</span><span>Compositing</span></div>
+          <h3>Telescopic mast VFX shot</h3>
+          <p>A two-stage steel telescopic mast with collars and chain drive, modelled and animated in Blender, rising out of a real fixed-camera plate. Matched light, shadows and grain, the sky extended upward, and a detail-camera inset of the drive.</p>
+          <p class="src">Plate: Pexels (licensed). 20 seconds, 1080p, 60 fps.</p>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="media">
+          <video controls playsinline preload="none" poster="media/cover-podcast.jpg" src="media/podcast-before-after.mp4"></video>
+        </div>
+        <div class="body">
+          <div class="tags"><span>Audio</span><span>Podcast</span><span>YouTube package</span></div>
+          <h3>Podcast clean-up, before and after</h3>
+          <p>Hiss, hum and a gap were added to a clean episode for the test, then removed with noise reduction and hum notches. A false start was cut, long pauses tightened, an intro and outro added, and the mix mastered to -16 LUFS.</p>
+          <p class="src">Source: a public-domain NASA podcast episode.</p>
+        </div>
+      </article>
+
+      <article class="card half">
+        <div class="media">
+          <img loading="lazy" src="media/podcast-thumbnail.jpg" alt="YouTube thumbnail for a NASA podcast episode about the Artemis I flight directors">
+        </div>
+        <div class="body">
+          <div class="tags"><span>Thumbnail</span><span>YouTube SEO</span></div>
+          <h3>YouTube package for the same episode</h3>
+          <p>Thumbnail, a 70-character title, an SEO description, 15 chapters timed from the transcript, and tags.</p>
+          <p class="src">Photos: NASA (public domain).</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>3D rendering</h2>
+    <div class="grid">
+      <article class="card wide">
+        <div class="media">
+          <img loading="lazy" src="media/robotics-lab.jpg" alt="Rendered interior of a school robotics lab with benches, robots and 3D printers">
+        </div>
+        <div class="body">
+          <div class="tags"><span>Interior</span><span>Blender Cycles</span></div>
+          <h3>STEM robotics lab interior</h3>
+          <p>A spec still for a school robotics-lab walkthrough brief: a cobot with cable loom and gripper, a humanoid robot on a plinth, robot kits, open-frame 3D printers, test instruments and soldering stations, and a park view through the windows.</p>
+          <p class="src">Modelled and rendered in Blender; CC0 textures and props.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Interactive</h2>
+    <div class="grid">
+      <article class="card half">
+        <div class="body">
+          <div class="tags"><span>WebGL</span><span>Product configurator</span></div>
+          <h3>Table-tennis blade configurator</h3>
+          <p>A three.js browser demo built from a client's CAD file for a contest brief: switch between two handle designs, drag to rotate, zoom, and jump between five preset views.</p>
+          <p><a href="https://ksiva.github.io/blade-configurator-demo/" rel="noopener">Open the demo</a></p>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    Spec samples made for real briefs. I use modern AI tools in parts of my workflow, and say where on each project. All stock is licensed or public domain, as noted under each piece.
+  </div>
+</footer>
+</body>
+</html>
