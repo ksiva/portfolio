@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Siva Kumar · Video & 3D Portfolio</title>
-<meta name="description" content="Short-form video editing, motion graphics and 3D renders: spec samples by Siva Kumar.">
+<title>Siva Kumar · Video, 3D & Web Portfolio</title>
+<meta name="description" content="Short-form video editing, motion graphics, 3D renders and websites: spec samples by Siva Kumar.">
 <meta name="robots" content="noindex">
 <style>
   :root{
@@ -43,10 +43,22 @@
   .tags span{font-size:12px;color:var(--accent);border:1px solid #3a3222;border-radius:6px;padding:2px 8px}
   .body p{margin:0 0 8px;color:var(--muted);font-size:15px}
   .body p.src{font-size:13px;margin-top:10px;color:#77766f}
+  .site{display:block;background:#000;line-height:0}
+  .site img{width:100%;height:auto;display:block;aspect-ratio:16/10}
+  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:#000;border-top:2px solid #000}
+  .shots a{display:block;line-height:0;position:relative}
+  .shots img{width:100%;height:auto;display:block;aspect-ratio:16/10}
+  .shots span{position:absolute;left:8px;bottom:8px;line-height:1.2;font-size:12px;background:rgba(14,15,17,.82);
+    color:var(--text);border-radius:6px;padding:3px 8px}
+  .site:hover img,.shots a:hover img{opacity:.88}
+  .visit{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  .visit a{text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px}
+  .visit a:hover{border-color:var(--accent)}
   footer{border-top:1px solid var(--line);padding:28px 0 48px;color:#77766f;font-size:13px}
   @media (max-width:820px){
     .half{grid-column:span 12}
     .pair{grid-template-columns:1fr}
+    .shots span{font-size:11px;left:4px;bottom:4px;padding:2px 6px}
     header{padding:48px 0 32px}
   }
 </style>
@@ -54,9 +66,9 @@
 <body>
 <header>
   <div class="wrap">
-    <p class="kicker">Video · Motion · 3D</p>
+    <p class="kicker">Video · Motion · 3D · Web</p>
     <h1>Siva Kumar</h1>
-    <p class="lede">Short-form video editing, motion graphics and 3D renders. Every piece here is a spec sample I built against a real client brief, delivered at 60 fps in the sizes the brief asked for.</p>
+    <p class="lede">Short-form video editing, motion graphics, 3D renders and websites. Most pieces here are spec samples I built against a real client brief, delivered in the sizes the brief asked for.</p>
     <div class="links">
       <a href="https://www.upwork.com/freelancers/~0172fdaac5d9d98a5d" rel="noopener">Upwork profile</a>
       <a href="https://contra.com/s_k_db1p7xtq" rel="noopener">Contra profile</a>
@@ -65,6 +77,67 @@
 </header>
 
 <main class="wrap">
+  <section id="websites">
+    <h2>Websites</h2>
+    <div class="grid">
+
+      <article class="card wide" id="tidewell">
+        <a class="site" href="https://ksiva.github.io/tidewell-concept/" rel="noopener"><img loading="lazy" width="1280" height="800" src="media/web-tidewell-home.jpg" alt="Tidewell home page: Small hotels by the Mediterranean, chosen by hand, with a booking bar over a coastal photo"></a>
+        <div class="shots">
+          <a href="https://ksiva.github.io/tidewell-concept/hotels/" rel="noopener"><img loading="lazy" width="640" height="400" src="media/web-tidewell-hotels.jpg" alt="Tidewell hotel list with region and mood filters"><span>Hotels</span></a>
+          <a href="https://ksiva.github.io/tidewell-concept/hotels/casa-ombrella/" rel="noopener"><img loading="lazy" width="640" height="400" src="media/web-tidewell-casa.jpg" alt="Casa Ombrella hotel page with rooms and photos"><span>Casa Ombrella</span></a>
+          <a href="https://ksiva.github.io/tidewell-concept/brand/" rel="noopener"><img loading="lazy" width="640" height="400" src="media/web-tidewell-brand.jpg" alt="Tidewell brand book: A sunlit, unhurried system"><span>Brand book</span></a>
+        </div>
+        <div class="body">
+          <div class="tags"><span>Concept project</span><span>Brand + website</span><span>Astro · GSAP</span></div>
+          <h3>Tidewell: small hotels by the Mediterranean</h3>
+          <p>A boutique-hotel brand and booking site I designed and built from scratch: home page, a filterable collection of eight hotels, a page for each hotel with rooms and rates, journal stories, an offer page, a brand book (logo, type, colour, voice) and a campaign kit with an email template and social and display ads. Scroll-driven motion with GSAP, static pages built with Astro and hosted on GitHub Pages.</p>
+          <p class="src">Concept project: Tidewell is a fictional brand; hotels, prices and copy are invented. Photos: Unsplash. Fonts: Bodoni Moda and Hanken Grotesk (SIL OFL).</p>
+          <div class="visit"><a href="https://ksiva.github.io/tidewell-concept/" rel="noopener">Open the site</a><a href="https://ksiva.github.io/tidewell-concept/brand/" rel="noopener">Brand book</a></div>
+        </div>
+      </article>
+
+      <article class="card wide" id="stillhaus">
+        <a class="site" href="https://ksiva.github.io/stillhaus-concept/" rel="noopener"><img loading="lazy" width="1280" height="800" src="media/web-stillhaus-home.jpg" alt="Stillhaus home page: Quiet houses for the cold months, in wide heavy type on dark pine green"></a>
+        <div class="shots">
+          <a href="https://ksiva.github.io/stillhaus-concept/houses/haus-laerche/" rel="noopener"><img loading="lazy" width="640" height="400" src="media/web-stillhaus-laerche.jpg" alt="Haus Lärche house page with a mountain hut photo"><span>Haus Lärche</span></a>
+          <a href="https://ksiva.github.io/stillhaus-concept/offers/the-still-week/" rel="noopener"><img loading="lazy" width="640" height="400" src="media/web-stillhaus-week.jpg" alt="The Still Week offer page: a snowy cabin at night"><span>The Still Week</span></a>
+          <a href="https://ksiva.github.io/stillhaus-concept/brand/" rel="noopener"><img loading="lazy" width="640" height="400" src="media/web-stillhaus-brand.jpg" alt="Stillhaus brand book: Loud type, quiet places"><span>Brand book</span></a>
+        </div>
+        <div class="body">
+          <div class="tags"><span>Concept project</span><span>Brand + website</span><span>Astro · GSAP</span></div>
+          <h3>Stillhaus: quiet houses in the Alps and the North</h3>
+          <p>A sister brand to Tidewell with the opposite mood: wide, heavy type against a soft reading serif, pine and ember colours. Home page with a scroll-opened window, a house index filterable by ritual (sauna, lake, fire, northern lights), seven house pages, journal stories, a winter offer, a brand book and a campaign kit with an email template and ads. Built with Astro and GSAP, hosted on GitHub Pages.</p>
+          <p class="src">Concept project: Stillhaus is a fictional brand; houses, prices and copy are invented. Photos: Unsplash. Fonts: Archivo and Newsreader (SIL OFL).</p>
+          <div class="visit"><a href="https://ksiva.github.io/stillhaus-concept/" rel="noopener">Open the site</a><a href="https://ksiva.github.io/stillhaus-concept/brand/" rel="noopener">Brand book</a></div>
+        </div>
+      </article>
+
+      <article class="card half" id="vesper-row">
+        <a class="site" href="https://ksiva.github.io/spec-sites/vesper-row/" rel="noopener"><img loading="lazy" width="1280" height="800" src="media/web-vesper-row.jpg" alt="Vesper Row home page: a list of commercial titles over a full-screen film"></a>
+        <div class="body">
+          <div class="tags"><span>Concept project</span><span>Production company</span><span>Astro · GSAP · WebGL</span></div>
+          <h3>Vesper Row: production company site</h3>
+          <p>A site for a commercials production company: a full-screen WebGL reel that dissolves from film to film on its own or as you hover the titles, a work index, a director roster with a page per director, news and studio pages, with smooth scrolling. Built with Astro, GSAP and Lenis.</p>
+          <p class="src">Concept project: Vesper Row, its directors and clients are fictional. Footage: Pexels.</p>
+          <div class="visit"><a href="https://ksiva.github.io/spec-sites/vesper-row/" rel="noopener">Open the site</a></div>
+        </div>
+      </article>
+
+      <article class="card half" id="mira-castellane">
+        <a class="site" href="https://ksiva.github.io/spec-sites/mira-castellane/" rel="noopener"><img loading="lazy" width="1280" height="800" src="media/web-mira.jpg" alt="Mira Castellane home page: the director's name over a widescreen showreel of a breaking wave"></a>
+        <div class="body">
+          <div class="tags"><span>Concept project</span><span>Director portfolio</span><span>Astro · GSAP · Lenis</span></div>
+          <h3>Mira Castellane: commercial director portfolio</h3>
+          <p>A one-person director site styled like a film: a widescreen showreel with a running timecode, seven selected films in a pinned sideways gallery where the film nearest the centre plays, a page per film, an about page, notes and end credits. Built with Astro, GSAP and Lenis.</p>
+          <p class="src">Concept project: Mira Castellane, her clients and crew are fictional. Footage: Pexels.</p>
+          <div class="visit"><a href="https://ksiva.github.io/spec-sites/mira-castellane/" rel="noopener">Open the site</a><a href="https://ksiva.github.io/spec-sites/" rel="noopener">Both sites</a></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
   <section>
     <h2>Video &amp; motion</h2>
     <div class="grid">
